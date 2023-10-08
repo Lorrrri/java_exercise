@@ -12,20 +12,20 @@ public class lucky7 {
 
         
         
-        // Step 3: Ask how much money the player wants to spend
+        
         System.out.print("How much money do you want to spend? ");
         int f_Money = scanner.nextInt();
         money = f_Money;
         
         while (money > 0) {
-            // Step 1: Randomize 3 numbers between 1-10
+            
             int num1 = random.nextInt(10) + 1;
             int num2 = random.nextInt(10) + 1;
             int num3 = random.nextInt(10) + 1;
             
             System.out.println("Random numbers: " + num1 + ", " + num2 + ", " + num3);
 
-            // Step 2: Check for 7s and update money
+            
             if (num1 == 7 || num2 == 7 || num3 == 7) {
                 if (num1 == 7 && num2 == 7 && num3 == 7) {
                 	money += 10;
@@ -48,7 +48,7 @@ public class lucky7 {
             
            
 
-            // Step 3: Ask if the player wants to play again
+           
             System.out.print("Do you want to play again? (y/n): ");
             String answer = scanner.next();
             if (!answer.equalsIgnoreCase("y")) {
